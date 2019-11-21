@@ -1,0 +1,16 @@
+<div class="main-container">
+        <h2 class="title-container">Contacts</h2>
+        <ul  >
+        <a routerLink="/display" routerLinkActive="active" class="display">  
+            <li *ngFor="let cont of contacts" [class.selected]="cont===selectedContact" (click)="onSelect(cont)" class="display-item">
+            <span class="details-container">
+              <h1 class="name-size">{{cont.name}}</h1>
+             <p> {{cont.email}}</p>
+              {{cont.mobile}}
+            </span>
+          </li> </a>
+        </ul>
+        </div>
+        <div *ngIf="!contacts[0]">
+          <p> No Contacts are present in this list!!</p>
+        </div>

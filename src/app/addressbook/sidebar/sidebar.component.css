@@ -1,0 +1,26 @@
+.main-container{
+    position: relative;
+    top:5px;
+    width:400px;
+}
+.title-container{
+    padding:20px;
+}
+.display-item{
+    border:1px solid black;
+    padding:5px;
+}
+.display{    
+    text-decoration: none;
+    color:black;
+}
+.main-size{
+    font-weight:200;
+    
+}
+.details-container{
+    padding-bottom: 10px;
+}
+.display-item:hover{
+    background-color:skyblue;
+}
